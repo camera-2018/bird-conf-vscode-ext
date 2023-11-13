@@ -1,0 +1,25 @@
+{
+  "name": "bird-ext",
+  "displayName": "bird-conf-ext",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bird_conf",
+      "aliases": ["Bird Configuration", "bird_conf"],
+      "extensions": ["conf"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bird_conf",
+      "scopeName": "source.birdconf",
+      "path": "./syntaxes/bird_conf.tmLanguage.json"
+    }]
+  }
+}
